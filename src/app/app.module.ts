@@ -22,12 +22,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/auth.guard';
 import {
-  MdButtonModule,
-  MdCardModule,
-  MdInputModule,
-  MdToolbarModule,
-  MdProgressBarModule,
-  MdSelectModule
+  MatButtonModule,
+  MatCardModule,
+  MatInputModule,
+  MatToolbarModule,
+  MatProgressBarModule,
+  MatSelectModule
 } from '@angular/material';
 
 import { StoreModule } from '@ngrx/store';
@@ -56,12 +56,12 @@ import { companyReducer } from './state/company.reducers';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MdButtonModule,
-    MdCardModule,
-    MdInputModule,
-    MdToolbarModule,
-    MdProgressBarModule,
-    MdSelectModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatProgressBarModule,
+    MatSelectModule,
     StoreModule.forRoot({ companies: companyReducer }),
     EffectsModule.forRoot([CompanyEffects]),
     StoreDevtoolsModule.instrument({
